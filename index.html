@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SortableJS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <style>
+        .container {
+            padding: 16px 0;
+        }
+        .categorys {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .section {
+            flex-grow: 1;
+            max-width: 500px;
+        }
+        .sequence {
+            color: white;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>
+            罗克奇价值观调查表(Rokeach Values Survey)
+        </h3>
+        <hr/>
+        <div class="categorys">
+            <div id="simple-list" class="section">
+                <div>
+                    <h4>终极价值观 <span style="color: gray; font-size: 12px;">按住拖拽以排序</span></h4>
+                </div>
+                <div id="value1" class="list-group">
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>舒适的生活（富足的生活）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>振奋的生活（刺激的、积极的生活）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>成就感（持续的贡献）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>和平的世界（没有冲突和战争）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>美丽的世界（艺术和自然的美）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>平等（兄弟情谊、机会均等）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>家庭安全（照顾自己所爱的人）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>自由（独立、自主的选择）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>幸福（满足）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>内在和谐（没有内心冲突）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>成熟的爱（性和精神上的亲密）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>国家的安全（免遭攻击）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>快乐（快乐的、休闲的生活）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>救世（救世的、永恒的生活）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>自尊（自重）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>社会承认（尊重、赞赏）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>真挚的友谊（亲密关系）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>睿智（对生活有成熟的理解）</div>
+                </div>
+            </div>
+            <hr />
+            <div id="simple-list" class="section">
+                <h4>工具型价值观 <span style="color: gray; font-size: 12px;">按住拖拽以排序</span></h4>
+                <div id="value2" class="list-group">
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>雄心勃勃（辛勤工作、奋发向上）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>心胸开阔（开放）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>能干（有能力、有效率）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>欢乐（轻松愉快）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>清洁（卫生、整洁）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>勇敢（坚持自己的信仰）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>宽容（谅解他人）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>助人为乐（为他人的福利工作）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>正直（真挚、诚实）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>富于想象（大胆、有创造性）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>独立（自力更生、自给自足）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>智慧（有知识、善思考）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>符合逻辑（理性的）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>博爱（温情的、温柔的）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>顺从（有责任感、尊重的）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>礼貌（有礼的、性情好）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>负责（可靠的）</div>
+                    <div class="list-group-item"><span class="badge bg-primary rounded-pill sequence">01</span>自我控制（自 律的、约束的）</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://sortablejs.github.io/Sortable/Sortable.js"></script>
+    <script>
+        const zeroPad = (num, places) => String(num).padStart(places, '0')
+
+        function sequenceHandler(ele) {
+            return function(evt) {
+                const spans = ele.querySelectorAll("div span")
+                spans.forEach((s, i) => s.innerHTML = zeroPad(i+1, 2))
+            }
+        }
+
+        sequenceHandler(value1)()
+        sequenceHandler(value2)()
+
+        new Sortable(value1, {
+            animation: 150,
+            ghostClass: 'list-group-item-info',
+            onEnd: sequenceHandler(value1)
+        });
+        new Sortable(value2, {
+            animation: 150,
+            ghostClass: 'list-group-item-info',
+            onEnd: sequenceHandler(value2)
+        });
+
+    </script>
+</body>
+
+</html>
